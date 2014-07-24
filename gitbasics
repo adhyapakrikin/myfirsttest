@@ -1,0 +1,37 @@
+[5/12/2014 6:54:05 PM] : sure
+[5/12/2014 7:04:09 PM] : $ mkdir ~/.ssh ...[it will create '.ssh' directory to your home eg. 'C:\Documents and Settings\Sham Haramalkar\']
+
+$ cd ~/.ssh ...[go into '.ssh']
+
+$ ssh-keygen -t rsa -C "your email address" ...[it create two key's 'id_rsa' and 'id_rsa.pub' into .ssh folder]
+[5/12/2014 7:06:41 PM] Rikin A - Clarion, India: dost send me all list of commands if you have
+[5/12/2014 7:07:47 PM] : Create the branch on your local machine 
+========================================
+$ git branch <name_of_your_new_branch>
+
+Switch to your new branch 
+=========================
+$ git checkout <name_of_your_new_branch>
+
+Push the branch on github
+==========================
+$ git push origin <name_of_your_new_branch>
+
+You can see all branches created by using
+==========================================
+$ git branch
+
+To Delete a Branch:
+====================
+ 1) Delete a branch on your local filesytem
+ $ git branch -d <name_of_your_new_branch>
+ 
+ 2) Delete the branch on github
+ $ git push origin :<name_of_your_new_branch>
+ 
+To Merge a branch
+- Commit the code
+- Go to the development branch (git checkout development).
+- $ git merge <branch_name> 
+- Push the branch
+- Deployed the code
